@@ -112,8 +112,8 @@ Write a function named containsWorld that takes in a string or number of any len
 
 const containsWorld = (input) => {
   // Solution code here...
-  const pattern = /\bworld\b/;
-  return pattern.test(input.toString().toLowerCase());
+  const pattern = /world/g;
+  return pattern.test(input)
 };
 
 /* ------------------------------------------------------------------------------------------------
