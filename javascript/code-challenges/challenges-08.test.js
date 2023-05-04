@@ -99,6 +99,13 @@ For example:
 
 const isNum = (input) => {
   // Solution code here...
+  if (typeof input !== 'string' && typeof input !== 'number') {
+    return false;
+  }
+  // Create a regular expression pattern to match any digit
+  const pattern = /\d/;
+  // Convert the input to a string and test if it matches the pattern
+  return pattern.test(input.toString());
 };
 
 /* ------------------------------------------------------------------------------------------------
