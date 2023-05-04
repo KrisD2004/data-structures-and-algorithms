@@ -60,7 +60,6 @@ const sortByChildren = (charArray) => {
     } else if (char1.children.length > char2.children.length) {
       return 1;
     } else {
-      // If number of children is the same, sort alphabetically by house name
       if (char1.house < char2.house) {
         return -1;
       } else if (char1.house > char2.house) {
@@ -120,6 +119,8 @@ Write a function named containsWorld that takes in a string or number of any len
 
 const containsWorld = (input) => {
   // Solution code here...
+  const pattern = /\bworld\b/;
+  return pattern.test(input.toString().toLowerCase());
 };
 
 /* ------------------------------------------------------------------------------------------------
