@@ -84,7 +84,11 @@ Write a function named containsW that takes in a string. This function should us
 const containsW = (str) => {
   // Solution code here...
 
-  return str.toLowerCase().indexOf('w') >= 0;
+  if (str.includes('w') && !str.includes('W')) {
+    return true;
+  } else if (str.includes('W') || !str.includes('w')) {
+    return false;
+  }
 
 };
 
