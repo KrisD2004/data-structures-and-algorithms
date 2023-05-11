@@ -121,11 +121,11 @@ const salesData = (hours, data) => {
   // Solution code here...
   // 
   
-  const newArr=hours.map((element, index) => {
+  const NewArr=hours.map((element, index) => {
     return { sales: `${data[index]} cookies`, time: element };
   });
 
-  return newArr;
+  return NewArr;
 
 };
 
